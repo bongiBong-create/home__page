@@ -1,0 +1,152 @@
+@font-face {
+  font-family: "roboto";
+  src: url("./fonts/Roboto-Medium.ttf");
+}
+
+* {
+  font-family: "roboto";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+ul, ol, li {
+  list-style: none;
+  text-decoration: none;
+}
+
+li {
+  transition: all .5s;
+}
+
+li:hover {
+  opacity: .8;
+  transform: translateY(-10px);
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.dark a {
+  color: #fff;
+}
+
+button {
+  cursor: pointer;
+}
+
+section {
+  margin-bottom: 50px;
+}
+
+.animation__el.element__show {
+  opacity: 1;
+  transform: translate(0);
+}
+
+.animation__el.element__show.info__description {
+  opacity: .8;
+  transform: translate(0);
+}
+
+.dark {
+  background-color: #000;
+  color: #fff;
+}
+
+.dark .theme {
+  background-color: #fff;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  margin-bottom: 25px;
+}
+
+.theme {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: transparent;
+  background-color: black;
+  border: 0;
+}
+
+.info__description {
+  font-size: 4rem;
+  transform: translateX(-400px);
+  opacity: 0;
+  transition: all .5s;
+}
+
+.projects__title,
+.pet__projects-title {
+  text-align: center;
+  font-size: 4rem;
+  margin-bottom: 50px;
+}
+
+.projects__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 20px;
+  cursor: pointer;
+}
+
+.projects__item img,
+.pet__projects-item img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  transition: all .5s;
+}
+
+.dark .projects__item:hover img {
+  box-shadow: 1px 6px 10px 10px rgba(104, 113, 121, 0.2);
+}
+
+.projects__item:hover img {
+  box-shadow: 1px 6px 10px 10px rgba(1, 31, 59, 0.2);
+}
+
+.about {
+  transform: translateX(-400px);
+  opacity: 0;
+  transition: all .5s;
+}
+
+.about__description {
+  font-size: 4rem;
+  opacity: .8;
+}
+
+.about__title {
+  font-size: 4rem;
+}
+
+.footer {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  font-size: 1.5rem;
+}
