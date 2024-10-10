@@ -96,21 +96,43 @@ section {
   margin-bottom: 50px;
 }
 
+.item__title {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
 .projects__grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  gap: 20px;
+  gap: 30px;
   cursor: pointer;
 }
 
-.projects__item img,
-.pet__projects-item img {
+.projects__item img {
   width: 100%;
   object-fit: cover;
   object-position: center;
   border-radius: 10px;
   margin-bottom: 10px;
   transition: all .5s;
+}
+
+.pet__projects-item {
+  text-align: center;
+}
+
+.pet__projects-item img {
+  width: 100%;
+  max-width: 1000px;
+  object-fit: contain;
+  object-position: center;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.projects__item {
+  display: flex;
+  align-items: center;
 }
 
 .dark .projects__item:hover img {
